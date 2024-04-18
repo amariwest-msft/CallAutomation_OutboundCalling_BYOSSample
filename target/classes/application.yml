@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: CallAutomation_OutboundCalling
+
+server:
+  port: 8080
+
+acs:
+  connectionstring: endpoint=https://outboundcall.unitedstates.communication.azure.com/;accesskey=IeoHZVMYn9i9NGvTc4Hm1LyW4+BqSatAs86J3SYMnbOUVtOGejGhHHWE/QNPKYbJW8VtMv3efF0MA0eg6PHNlA==
+  basecallbackuri: https://17hmwrdx.usw3.devtunnels.ms:8080
+  callerphonenumber: "+18336421880"
+  targetphonenumber: "+15624728312"

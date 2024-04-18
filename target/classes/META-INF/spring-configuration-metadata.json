@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "acs",
+      "type": "com.communication.callautomation.AppConfig",
+      "sourceType": "com.communication.callautomation.AppConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "acs.basecallbackuri",
+      "type": "java.lang.String",
+      "sourceType": "com.communication.callautomation.AppConfig"
+    },
+    {
+      "name": "acs.callerphonenumber",
+      "type": "java.lang.String",
+      "sourceType": "com.communication.callautomation.AppConfig"
+    },
+    {
+      "name": "acs.connection-string",
+      "type": "java.lang.String",
+      "sourceType": "com.communication.callautomation.AppConfig"
+    },
+    {
+      "name": "acs.targetphonenumber",
+      "type": "java.lang.String",
+      "sourceType": "com.communication.callautomation.AppConfig"
+    }
+  ],
+  "hints": []
+}
