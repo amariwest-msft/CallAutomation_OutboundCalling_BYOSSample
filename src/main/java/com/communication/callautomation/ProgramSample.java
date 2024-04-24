@@ -47,8 +47,8 @@ public class ProgramSample {
     private CallAutomationClient client;
     private String recordingLocation;
 
-    String hostingEndpoint = "https://europe-test-resource.europe.communication.azure.com/";
-    String acsConnectionString = "endpoint=https://europe-test-resource.europe.communication.azure.com/;accesskey=67o6r4mkVb0njWOe2ZJ6Q+tn+FvETz5AJHnPek4bcBakycqaB/F/EeYe1dpygwPUd/LlZxZkbtqsHv1Y+ksHSw==";
+    String hostingEndpoint = "https://rld4rz57.usw3.devtunnels.ms:8080";
+    String acsConnectionString = "endpoint=https://isuraconnectortest.unitedstates.communication.azure.com/;accesskey=gRt4jvKrU6Wr/lKoXP6urJhHCi2OW1barEXBq7HT00EgT5XFKh6bazEJtFhcfLzIYmYXeQjh0FWL4zoCm16yqA==";
     
     String callConnectionId = "";
     String recordingId = "";
@@ -73,7 +73,7 @@ public class ProgramSample {
         // CallConnection callConnection = client.getCallConnection(callConnectionId);
         // CallConnectionProperties callConnectionProperties = callConnection.getCallProperties();
         // String serverCallId = callConnectionProperties.getServerCallId();
-        String serverCallId = "805cc351-8342-4e66-ba0c-69e8c50c7010";
+        String serverCallId = "188e7b0f-6e36-4332-8f11-5f0becbb18f7";
         System.out.println(serverCallId);
         CallLocator callLocator = new GroupCallLocator(serverCallId);
 
@@ -326,7 +326,6 @@ public class ProgramSample {
         try {
             client = new CallAutomationClientBuilder()
                     .connectionString(appConfig.getConnectionString())
-                    .endpoint("https://nextpma.plat.skype.com:6448/")
                     .buildClient();
             return client;
         } catch (NullPointerException e) {
